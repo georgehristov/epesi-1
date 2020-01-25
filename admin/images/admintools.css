@@ -121,9 +121,8 @@ table.listing tr.odd {
     margin-bottom: 5px;
 }
 
-.footer {
-    margin-top: 10px;
-    font-family: 'Exo 2', sans-serif;
+span.footer {
+	font-family: 'Exo 2', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -131,6 +130,7 @@ table.listing tr.odd {
 	background-color: #FFFFFF;
 	text-decoration: none;
 	vertical-align: bottom;
+	height: 100px;
 }
 
 .line {
@@ -182,7 +182,6 @@ table.listing tr.odd {
     height: 32px;
     padding-top: 10px;
 }
-
 
 div.licence {
     overflow: auto;
