@@ -85,7 +85,7 @@ ob_start();
 	<body <?php if (DIRECTION_RTL) print('class="epesi_rtl"'); ?> >
 
 		<div id="body_content" class="body_content">
-			<div id="main_content">Main Content</div>
+			<div id="main_content"></div>
 			<div id="epesiStatus"><?php print(STARTING_MESSAGE);?></div>
 			<div id="debug_content" style="padding-top:97px;display:none;">
 				<div class="button" onclick="$('error_box').innerHTML='';$('debug_content').style.display='none';">Hide</div>
