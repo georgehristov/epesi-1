@@ -5,7 +5,7 @@
 </div>
 {else}
 
-<div class="logo img-responsive">{$logo}</div>
+<div class="logo">{$logo}</div>
 
 <div id="login-screen" class="container">
 
@@ -21,15 +21,17 @@
                         <!-- Display the fields -->
 
                         {if $is_demo}
-                            <p><strong>Epesi is in DEMO mode!</strong></p>
+                            <DIV>DEMO mode!</div>
                         {/if}
                         {if isset($message)}
                             <div class="alert alert-info text-center">
                                 {$message}
+                            {if isset($message_action)}<p>{$message_action}</p>
                             </div>
-                            {if isset($message_action)}<p>{$message_action}</p>{/if}
+                            {/if}
+                        
                         {else}
-                               
+                            <div id="login_form">
                                 <div class="form-group">
                                 <p class="error">{$form_data.username.error}</p>
                                     <label>{$form_data.username.label}</label>
@@ -38,37 +40,46 @@
                             
                             {if $mode=='recover_pass'}
                                     <div class="form-group">
-                                     <p class="error">{$form_data.mail.error}</p>
-                                    <label>{$form_data.mail.label}&nbsp;&nbsp;</label>
-                                    {$form_data.mail.html}
+                                        <p class="error">{$form_data.mail.error}</p>
+                                        <label>{$form_data.mail.label}&nbsp;&nbsp;</label>
+                                        {$form_data.mail.html}
+                                    <div>
+                                    <div> 
+                                        {$form_data.submit_button.html}
+                                       <!-- <a {$back_href}><p>{"Cancel"|t}</p></a> -->
                                     </div>
-                                    {$form_data.submit_button.html}<a {$back_href}><p>{"Cancel"|t}</p></a>
-                            
+
                             {else}
                                 <div class="form-group">
                                     <label>{$form_data.password.label}</label>
                                     {$form_data.password.html}
                                 </div>
-                                {$form_data.submit_button.html}
+                                <div>{$form_data.submit_button.html}</div>
+                            
+                            </div> <!-- login form -->
+                                
                                 <div class="checkbox">
-                                    <label>{$form_data.autologin.html}</label>
+                                    <label>{$form_data.autologin.html}</label><br><br>
                                     <small>{$form_data.warning.html}</small>
                                 </div>
+
                             {/if}
                         {/if}
-                    <p>{$form_data.recover_password.html}</p>
-                    </form>
+                    
+                   
+                    <br>
+                    <div id="recover_pass">{$form_data.recover_password.html}</div>
+                
+                </form>
+                
                 {/if}
                 
+    </div>
 </div>
 
- <div class="footer">
-    {if isset($donation_note)}
-        <p>{$donation_note}</p>
-    {/if}
-	
+ <div id="footer">
     <div><a href="https://epe.si"><img src="images/epesi-powered.png" border="0"></a></div>
-	<div>Copyright &copy; 2006-<?php echo date('Y'); ?> by Janusz Tylek</div>
+	<div>Copyright &copy; 2006-2020 by Janusz Tylek</div>
 	<div class="support">Support: <a href="https://epesi.org">https://epesi.org</a></div>
 </div>
 

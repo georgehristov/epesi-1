@@ -1,30 +1,19 @@
 #Base_User_Login .main_content {
-	margin: 10px;
-	padding: 50px;
+	padding: 10px;
 	font-family: 'Exo 2', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	border: 1px solid #AFAFAF;
-	font-size: 14px;
+	font-size: 16px;
 	height: 20px;
-	background-color: #E0E0E0;
 	text-align: center;
 	align-items: center;
 	display: block;
-	width: 300px;
 	align: center;
 }
 
 #Base_Box__login {
-	width: 50%;
 	text-align: center;
 	align-items: center;
-	background-color: #DADADA;
-}
-
-#Base_User_Login .gradient {
-	background-color: #ffffff;
-	background: #0A3C5C;
 }
 
 #Base_User_Login .title {
@@ -95,7 +84,7 @@
 	font-family: 'Exo 2', sans-serif;
 	font-style: bold;
 	font-weight: 400;
-	font-size: 14;
+	font-size: 16;
 	height: 30px;
 	text-align: right;
 }
@@ -103,6 +92,7 @@
 #Base_User_Login .input {
 	font-weight: normal;
 	width: 200px;
+	font-size: 16;
 	height: 30px;
 	text-align: left;
 }
@@ -122,20 +112,6 @@
 	width: 200px;
 }
 
-#header_tail {
-	width: 300px;
-	margin: 20px;
-}
-
-#Base_User_Login .footer {
-		background-color: #FFFFFF;
-		font-size: 14px;
-		color: #758f82;
-		padding-top: 30px;
-		text-align: center;
-		align-items: center;
-		display: grid;
-}
 
 
 #Base_User_Login .footer a {
@@ -254,4 +230,42 @@
 }
 #Base_User_Login .message a {
 	font-variant: small-caps;
+}
+
+#epesiStatus {
+
+	color: wheat;
+    position: fixed;
+    visibility: visible;
+    bottom: 5px;
+    right: 5px;
+    background-color: grey;
+    padding: 5px 5px 30px 10px;
+    line-height: 30px;
+    width: 300px;
+}
+
+#logo {
+	padding: 5px;
+}
+
+#footer {
+	font-size: 14px;
+	color: #777777;
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+	align: center;
+
+}
+
+div.footer :hover {
+	background-color: teal;
+}
+
+div.footer a {
+	font-size: 14;
+	font-weight: bold;
+	font-optical-sizing: 10px;
 }
